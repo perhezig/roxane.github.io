@@ -1,0 +1,43 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kalnia+Glaze:wdth,wght@100.1,100..700&family=Kdam+Thmor+Pro&family=Playwrite+NL+Guides&family=Playwrite+VN+Guides&display=swap');
+
+ h1 
+ {
+  color : red ;
+   
+ }
+ 
+ h2{
+   color : green ;
+ }
+ 
+ p
+ {
+  color : blue ;
+ }
+ 
+ .orange
+ {
+  color: orange ;
+ }
+
+ .no
+ {  
+  border-radius: 20px;
+ }
+
+
+.impotant
+{
+ font-weight: bold;
+}
+
+body 
+{
+  background-color:#eecda3; 
+  background-attachment: fixed ;
+  color: black; 
+}
+ 
+ 

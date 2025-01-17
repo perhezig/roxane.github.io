@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kalnia+Glaze:wdth,wght@100.1,100..700&family=Kdam+Thmor+Pro&family=Playwrite+NL+Guides&family=Playwrite+VN+Guides&display=swap');
+
+
+ body 
+{
+  margin: 0;
+  height: 100vh;
+  background-image: url(gnome.jpg); 
+  background-size: cover ;
+  background-repeat: no-repeat;
+   
+}
+ 
