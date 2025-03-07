@@ -1,43 +1,168 @@
 
-
+/* Importation de polices depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kalnia+Glaze:wdth,wght@100.1,100..700&family=Kdam+Thmor+Pro&family=Playwrite+NL+Guides&family=Playwrite+VN+Guides&display=swap');
 
- h1 
- {
-  color : red ;
-   
- }
- 
- h2{
-   color : green ;
- }
- 
- p
- {
-  color : blue ;
- }
- 
- .orange
- {
-  color: orange ;
- }
-
- .no
- {  
-  border-radius: 20px;
- }
-
-
-.impotant
-{
- font-weight: bold;
+/* Style pour les éléments <p> */
+p {
+   margin: auto;  /* Centre le paragraphe horizontalement */
+   width: 350px;  /* Définit la largeur du paragraphe */
+   padding: 16px; /* Ajoute de l'espace à l'intérieur du paragraphe */
 }
 
-body 
-{
-  background-color:#eecda3; 
-  background-attachment: fixed ;
-  color: black; 
+/* Style pour les éléments <h1> (titres principaux) */
+h1 {
+   color: red;                                                  /* Définit la couleur du texte à rouge */
+   font-weight: 400;                                            /* Poids de la police (normal) */
+   font-style: normal;                                          /* Style de police (normal) */
+   text-align: justify;                                         /* Justifie le texte */
+   text-shadow: 5px 5px 15px rgba(255,0,0,0.7);                 /* Ombre portée du texte */
+   margin: auto;                                                /* Centre l'élément horizontalement */
+   width: 350px;                                                /* Définit la largeur du titre */
+   padding: 16px;                                               /* Ajoute de l'espace à l'intérieur du titre */
 }
- 
- 
+
+/* Style pour les éléments <h3> (titres de niveau 3) */
+h3 {
+   font-family: "Kdam Thmor Pro", serif;                       /* Définit la police à utiliser */
+   font-weight: 400;                                           /* Poids de la police (normal) */
+   font-style: normal;                                         /* Style de police (normal) */
+   text-align: justify;                                        /* Justifie le texte */
+   text-shadow: 5px 5px 15px rgba(0,0,0,0.7);                  /* Ombre portée du texte */
+}
+
+/* Classe .ombre pour appliquer une ombre portée à tout élément avec cette classe */
+.ombre {
+   text-shadow: 5px 5px 15px rgba(0,0,0,0.7);                 /* Ombre portée du texte */
+}
+
+/* Style pour les éléments <h2> (titres de niveau 2) */
+h2 {
+   font-family: "Kalnia Glaze", serif;                    /* Définit la police à utiliser */
+   font-weight: 400;                                     /* Poids de la police (normal) */
+   font-style: normal;                                 /* Style de police (normal) */
+   text-align: center;                                 /* Centre le texte */
+}
+
+/* Classe .important pour un texte important avec une police spécifique et une couleur */
+.important {
+   font-family: "Fredericka the Great", serif; /* Police spécifique */
+   color: blue; /* Couleur du texte */
+   font-style: normal; /* Style de police (normal) */
+}
+
+/* Classe .no pour un conteneur flexible avec une mise en page responsive */
+.no {
+   display: flex; /* Utilisation du modèle Flexbox */
+   flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes */
+   gap: 10px; /* Espace entre les éléments */
+   justify-content: space-between; /* Espacement égal entre les éléments */
+   font-size: 25px; /* Taille du texte */
+   background-color: black; /* Couleur de fond noire */
+   border-radius: 10px; /* Coins arrondis */
+   box-shadow: 6px 6px 0px rgba(0, 0, 0); /* Ombre portée */
+   padding: 50px; /* Espacement intérieur du conteneur */
+}
+
+/* Style pour les images dans la classe .no */
+.no img {
+   width: 30%; /* Les images prennent 30% de la largeur du conteneur */
+}
+
+/* Classe .conteneur pour une mise en page en grille */
+.conteneur {
+   display: grid; /* Utilisation du modèle de grille CSS */
+   grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colonnes de taille égale */
+   grid-template-rows: 100px 100px 100px 100px; /* 4 lignes de hauteur égale */
+   grid-gap: 10px; /* Espacement entre les cellules de la grille */
+}
+
+/* Classe .impotant pour mettre un texte en gras */
+.impotant {
+   font-weight: bold; /* Met le texte en gras */
+}
+
+/* Style de base du body avec une couleur de fond et centrage du contenu */
+body {
+   background-color: #e8cbc0; /* Couleur de fond */
+   background-attachment: fixed; /* Fixe l'arrière-plan lors du défilement */
+   color: black; /* Couleur du texte */
+   margin: 0; /* Retire les marges par défaut */
+   height: 100%; /* Définit la hauteur du body */
+   text-align: justify; /* Justifie le texte */
+   align-items: center; /* Centre les éléments sur l'axe vertical */
+   display: flex; /* Utilise Flexbox */
+   justify-content: center; /* Centre les éléments sur l'axe horizontal */
+}
+
+/* Classe .conte pour un fond en dégradé avec des coins arrondis */
+.conte {
+   background: #eecda3; /* Couleur de fond */
+   background: -webkit-linear-gradient(to right, #eecda3, #ef629f); /* Dégradé de gauche à droite */
+   background: linear-gradient(to bottom, #eecda3, #ef629f); /* Dégradé de haut en bas */
+   border-radius: 10px; /* Coins arrondis */
+}
+
+/* Classe .contess avec une largeur maximale et une hauteur proportionnée */
+.contess {
+   width: 90%; /* Largeur de 90% */
+   max-width: 1000px; /* Largeur maximale de 1000px */
+   height: 70%; /* Hauteur de 70% */
+}
+
+/* Classe .contes pour un fond en dégradé et des coins arrondis */
+.contes {
+   background: #eecda3; /* Couleur de fond */
+   background: -webkit-linear-gradient(to right, #eecda3, #ef629f); /* Dégradé de gauche à droite */
+   background: linear-gradient(to top, #eecda3, #ef629f); /* Dégradé de bas en haut */
+   border-radius: 10px; /* Coins arrondis */
+}
+
+/* Classe .img pour une image flottante à droite */
+.img {
+   float: right; /* Fait flotter l'image à droite */
+}
+
+/* Classe .imm pour une image avec une hauteur automatique */
+.imm {
+   height: auto; /* Hauteur de l'image ajustée automatiquement */
+}
+
+/* Classe .contient pour un conteneur flexible avec alignement et espacement */
+.contient {
+   display: flex; /* Utilisation de Flexbox */
+   align-items: center; /* Aligne les éléments sur l'axe vertical */
+   gap: 20px; /* Espace entre les éléments */
+}
+
+/* Classe .noo pour une grille de 3 colonnes et 5 lignes */
+.noo {
+   display: grid; /* Utilisation de la grille */
+   grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes de taille égale */
+   grid-template-rows: 300px 300px 300px 300px 300px; /* 5 lignes de 300px de hauteur */
+   grid-gap: 15px; /* Espacement entre les cellules */
+}
+
+/* Style pour les images dans .noo */
+.noo img {
+   display: grid; /* Utilisation de la grille pour les images */
+   gap: 10px; /* Espacement entre les images */
+   justify-content: space-between; /* Espacement entre les images */
+   font-size: 25px; /* Taille du texte */
+   background-color: #fdeff9; /* Couleur de fond */
+   border-radius: 10px; /* Coins arrondis */
+   box-shadow: 6px 6px 0px rgba(0, 0, 0); /* Ombre portée */
+   padding: 50px; /* Espacement intérieur des images */
+}
+
+/* Style pour les éléments <td> et <th> dans un tableau */
+td, th {
+   border: 2px solid black; /* Bordure noire de 2px */
+}
+
+/* Style pour le tableau */
+table {
+   padding: 19px; /* Espacement intérieur du tableau */
+   border-collapse: collapse; /* Supprime l'espacement entre les bordures des cellules */
+   margin-left: auto; /* Définit la marge gauche à auto */
+   margin-right: auto; /* Définit la marge droite à auto */
+}
